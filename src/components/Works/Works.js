@@ -5,8 +5,8 @@ import WorksRender from '../WorksRender/WorksRender'
 
 function Works() {
   return (
-    <div id='works'>
-        <Breakpoint name={'selected works'} link={'work'}/>
+    <div>
+        <Breakpoint name={'selected works'} link={'works'}/>
         <WorksRender/>
     </div>
   )
