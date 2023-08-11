@@ -1,0 +1,34 @@
+.carousel-container {
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    padding: 15px 0;
+    background-color: var(--text);
+    color: var(--background);
+    z-index: 200;
+
+    .carousel {
+        width: 800%;
+        display: flex;
+        gap: 30px;
+        animation: carousel 80s linear infinite;
+
+            @keyframes carousel {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-30%);
+                }
+            }
+
+        span {
+            font-family: 'Blanvad', serif;
+            text-transform: uppercase;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+    }
+}

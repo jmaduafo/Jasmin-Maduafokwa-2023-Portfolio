@@ -1,0 +1,101 @@
+import React from 'react'
+import './carousel.scss'
+
+function Carousel({title}) {
+  return (
+    <section>
+      <div className='carousel-container'>
+        <div className='carousel'>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+          <span>{title}</span>
+          <span>&#9679;</span>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Carousel
