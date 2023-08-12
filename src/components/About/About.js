@@ -4,7 +4,7 @@ import BreakPoint from '../Breakpoint/Breakpoint'
 import { motion } from 'framer-motion'
 import skillsData from '../../utils/skills'
 
-function About() {
+function About({scrollYProgress}) {
   const [musicHover, setMusicHover] = useState(false)
   const [animeHover, setAnimeHover] = useState(false)
   const [netflixHover, setNetflixHover] = useState(false)

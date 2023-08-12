@@ -52,50 +52,55 @@ const skillsData = [
     {
         "id": 11,
         "category": "frontend",
-        "language": "JQuery"
+        "language": "SASS"
     },
     {
         "id": 12,
         "category": "frontend",
-        "language": "framer motion"
+        "language": "JQuery"
     },
     {
         "id": 13,
         "category": "frontend",
-        "language": "GSAP"
+        "language": "framer motion"
     },
     {
         "id": 14,
         "category": "frontend",
-        "language": "Handlebars.js"
+        "language": "GSAP"
     },
     {
         "id": 15,
-        "category": "backend",
-        "language": "Javascript"
+        "category": "frontend",
+        "language": "Handlebars.js"
     },
     {
         "id": 16,
         "category": "backend",
-        "language": "MYSQL"
+        "language": "Javascript"
     },
     {
         "id": 17,
-        "category": "other",
-        "language": "photoshop"
+        "category": "backend",
+        "language": "MYSQL"
     },
     {
         "id": 18,
         "category": "other",
-        "language": "illustrator"
+        "language": "photoshop"
     },
     {
         "id": 19,
+        "category": "other",
+        "language": "illustrator"
+    },
+    {
+        "id": 20,
         "category": "frontend",
         "language": "Git"
     },
     {
-        "id": 20,
+        "id": 21,
         "category": "backend",
         "language": "Apollo Server"
     },

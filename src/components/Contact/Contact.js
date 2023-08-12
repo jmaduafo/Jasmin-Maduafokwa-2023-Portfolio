@@ -2,7 +2,7 @@ import React from 'react'
 import './contact.scss'
 import Breakpoint from '../Breakpoint/Breakpoint'
 
-function Contact() {
+function Contact({scrollYProgress}) {
   return (
     <div className='contact-section'>
       <Breakpoint name={'contact me'} link={'contact'}/>
@@ -16,7 +16,6 @@ function Contact() {
               <a href='https://www.linkedin.com/in/jasmine-maduafokwa-48070a180/' target='_blank' rel='noreferrer'><li>LinkedIn</li></a>
             </ul>
           </div>
-          <div className='line-break'></div>
           <div className='in-touch'>
             <h3>Want to work together? Let's get in touch!</h3>
             <p>Currently available for hybrid / remote work</p>

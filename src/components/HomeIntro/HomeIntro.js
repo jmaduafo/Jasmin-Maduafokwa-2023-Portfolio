@@ -2,7 +2,7 @@ import React from 'react'
 import './home-intro.scss'
 import mainImage from '../../assets/images/home-intro-main-image.jpg'
 
-function HomeIntro() {
+function HomeIntro({scrollYProgress}) {
   return (
     <section>
       <div className='home-intro-section'>

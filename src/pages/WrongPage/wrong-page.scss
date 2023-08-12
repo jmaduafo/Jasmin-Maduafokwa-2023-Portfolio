@@ -1,0 +1,21 @@
+.error-page {
+    .error-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 89vh;
+
+        h1 {
+            font-size: 25rem;
+            line-height: .8em;
+        }
+
+        p {
+            font-size: 20px;
+            width: 30%;
+            text-align: center;
+            letter-spacing: -.5px;
+        }
+    }
+}
