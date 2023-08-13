@@ -40,6 +40,16 @@
                     i {
                         font-size: 3.5rem;
                         // transform: rotate(45deg);
+                        animation: bounce 1s ease-in-out infinite alternate;
+                    }
+
+                    @keyframes bounce {
+                        from {
+                            transform: translateY(2.5px);
+                        }
+                        to {
+                            transform: translateY(-2.5px);
+                        }
                     }
                 }
             }

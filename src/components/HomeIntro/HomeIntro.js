@@ -11,7 +11,7 @@ function HomeIntro({scrollYProgress}) {
             <h1>I'm Jasmine,</h1>
           </div>
           <div className='home-intro-info'>
-            <p>a self-taught full stack developer with a deep passion for design and learning. I'm an innovative thinker seeking to use my mathematics background and design sense to create fully-functioning, eye-catching websites and apps created both independently and in team-based workspaces.</p>
+            <p>a self-taught full stack developer with a deep passion for design and learning. I'm an innovative thinker seeking to use my mathematics background and design sense to create fully-functioning, eye-catching websites and applications created both independently and in team-based workspaces.</p>
           </div>
           <div className='spinning-button'>
             <div>

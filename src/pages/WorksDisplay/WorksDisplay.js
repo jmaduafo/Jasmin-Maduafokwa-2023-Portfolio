@@ -69,9 +69,6 @@ function WorksDisplay() {
                 <div className='background-img'>
                   <img src={works?.images[0]} alt={works?.description}/>
                 </div>
-                <div className='front-img'>
-                  <img src={works?.images[1]} alt={works?.description}/>
-                </div>
             </div>
           </div>
           <Carousel title={works?.title}/>

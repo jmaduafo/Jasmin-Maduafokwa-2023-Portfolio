@@ -5,10 +5,12 @@
         align-items: center;
         flex-direction: column;
         height: 89vh;
+        padding-top: 5%;
 
         h1 {
             font-size: 25rem;
             line-height: .8em;
+            z-index: -1;
         }
 
         p {
