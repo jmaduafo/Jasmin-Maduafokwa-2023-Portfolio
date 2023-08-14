@@ -1,5 +1,5 @@
 .carousel-container {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -29,6 +29,114 @@
             font-weight: bolder;
             letter-spacing: 1px;
             font-size: 18px;
+        }
+    }
+}
+
+$xs: 0;
+$sm: 480px;
+$md: 767px;
+$lg: 991px;
+$xl-small: 1200px;
+$xl-large: 1320px;
+$giant: 1920px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .carousel-container {
+        width: 100%;
+        padding: 15px 0;
+    
+        .carousel {
+            width: 3500%;
+            gap: 30px;
+            animation: carousel 100s linear infinite;
+    
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .carousel-container {
+        width: 100%;
+        padding: 15px 0;
+    
+        .carousel {
+            width: 2500%;
+            gap: 30px;
+            animation: carousel 110s linear infinite;
+    
+            span {
+                font-size: 17px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .carousel-container {
+        width: 100%;
+        padding: 15px 0;
+    
+        .carousel {
+            width: 2000%;
+            gap: 30px;
+            animation: carousel 120s linear infinite;
+    
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl-small) {
+    .carousel-container {
+        width: 100%;
+        padding: 15px 0;
+    
+        .carousel {
+            width: 2000%;
+            gap: 30px;
+            animation: carousel 120s linear infinite;
+    
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $xl-small) and (max-width: $xl-large) {
+    .carousel-container {
+        width: 100%;
+        padding: 15px 0;
+    
+        .carousel {
+            width: 1000%;
+            gap: 30px;
+            animation: carousel 120s linear infinite;
+    
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+}
+  
+@media screen and (min-width: $xl-large) and (max-width: $giant) {
+}
+@media screen and (min-width: $giant) {
+    .carousel-container {
+        width: 100%;
+        padding: 20px 0;
+    
+        .carousel {
+            width: 1000%;
+            gap: 30px;
+            animation: carousel 120s linear infinite;
+    
+            span {
+                font-size: 24px;
+            }
         }
     }
 }

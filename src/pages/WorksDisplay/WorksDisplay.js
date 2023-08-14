@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Carousel from '../../components/Carousel/Carousel'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import selectedWorks from '../../utils/works'
 import WrongPage from '../WrongPage/WrongPage'
 import './works-display.scss'
@@ -61,9 +61,21 @@ function WorksDisplay() {
                 </div>
               </div>
               <div className='works-desc'>
-                <p>{works.projectDescription}</p>
-                <p>{works.projectDescription}</p>
+                <p>{works?.projectDescription}</p>
+                <p className='works-background'>{works?.backgroundDescription}</p>
               </div>
+              <div className='works-links'>
+                <div className='works-next'>
+                  <i className='bx bx-left-arrow-alt'></i>
+                  <Link to={`/works/${selectedWorks[(((works?.id + 4) - 1) - 1) % 4]?.title}`}><button>Previous Project</button></Link>
+                </div>
+                <a href={`https://github.com/${works?.github}`} target='_blank' rel='noreferrer'><i className='bx bxl-github' ></i></a>
+                <div className='works-next'>
+                  <Link to={`/works/${selectedWorks[(((works?.id + 4) - 1) + 1) % 4]?.title}`}><button>Next Project</button></Link>
+                  <i className='bx bx-right-arrow-alt'></i>
+                </div>
+              </div>
+              
             </div>
             <div className='works-display-images'>
                 <div className='background-img'>

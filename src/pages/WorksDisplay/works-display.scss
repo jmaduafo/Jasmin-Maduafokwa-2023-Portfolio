@@ -41,6 +41,39 @@
             }
 
             .works-desc {
+                .works-background {
+                    margin-top: 20px;
+                }
+            }
+
+            .works-links {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-top: 1.5rem;
+
+                i {
+                    font-size: 1.5rem;
+                }
+
+                .works-next {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 5rem;
+                    padding: 3px 10px;
+                    border-radius: 30px;
+                    border: 1.5px solid var(--detail);
+
+                    button {
+                        text-transform: uppercase;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        color: var(--text);
+                        cursor: pointer;
+                    }
+                }
             }
         }
 

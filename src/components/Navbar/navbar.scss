@@ -1,5 +1,5 @@
 header {
-    width: 100vw;
+    width: 100%;
     padding: 10px 60px;
     position: fixed;
     border-bottom: 1px solid #f5e7d334;
@@ -78,4 +78,144 @@ header {
             }
         }
     }
+}
+
+$xs: 0;
+$sm: 480px;
+$md: 767px;
+$lg: 991px;
+$xl-small: 1200px;
+$xl-large: 1320px;
+$giant: 1920px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .navbar {
+    
+        .nav-links {
+            gap: 30px;
+    
+            ul {
+                gap: 20px;
+    
+                a {
+                    font-size: 11px;
+                }
+            }
+    
+            button {
+                padding: 7px 15px;
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .navbar {
+    
+        .nav-links {
+            gap: 30px;
+    
+            ul {
+                gap: 20px;
+    
+                a {
+                    font-size: 12px;
+                }
+            }
+    
+            button {
+                padding: 7px 15px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .navbar {
+    
+        .nav-links {
+            gap: 30px;
+    
+            ul {
+                gap: 20px;
+    
+                a {
+                    font-size: 12px;
+                }
+            }
+    
+            button {
+                padding: 7px 15px;
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+@media screen and (min-width: $lg) and (max-width: $xl-small) {
+    .navbar {
+    
+        .nav-links {
+            gap: 30px;
+    
+            ul {
+                gap: 20px;
+    
+                a {
+                    font-size: 12px;
+                }
+            }
+    
+            button {
+                padding: 7px 15px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media screen and (min-width: $xl-small) and (max-width: $xl-large) {
+    .navbar {
+    
+        .nav-links {
+            gap: 30px;
+    
+            ul {
+                gap: 20px;
+    
+                a {
+                    font-size: 12px;
+                }
+            }
+    
+            button {
+                padding: 7px 15px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $xl-large) and (max-width: $giant) {
+}
+@media screen and (min-width: $giant) {    
+    .navbar {
+    
+        .nav-links {
+            gap: 40px;
+    
+            ul {
+                gap: 30px;
+    
+                a {
+                    font-size: 16px;
+                }
+            }
+    
+            button {
+                padding: 7px 20px;
+                font-size: 16px;
+            }
+        }
+    }
+  
 }

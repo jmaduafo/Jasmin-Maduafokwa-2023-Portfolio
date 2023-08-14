@@ -21,3 +21,126 @@
         }
     }
 }
+
+$xs: 0;
+$sm: 480px;
+$md: 767px;
+$lg: 991px;
+$xl-small: 1200px;
+$xl-large: 1320px;
+$giant: 1920px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .error-page {
+        .error-content {
+            height: 89vh;
+            padding-top: 5%;
+    
+            h1 {
+                font-size: 10rem;
+                line-height: .8em;
+            }
+    
+            p {
+                font-size: 14px;
+                width: 80%;
+            }
+        }
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .error-page {
+        .error-content {
+            height: 89vh;
+            padding-top: 5%;
+    
+            h1 {
+                font-size: 13rem;
+                line-height: .8em;
+            }
+    
+            p {
+                font-size: 15px;
+                width: 70%;
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .error-page {
+        .error-content {
+            height: 89vh;
+            padding-top: 5%;
+    
+            h1 {
+                font-size: 15rem;
+                line-height: .8em;
+            }
+    
+            p {
+                font-size: 16px;
+                width: 60%;
+            }
+        }
+    }
+
+}
+@media screen and (min-width: $lg) and (max-width: $xl-small) {
+    .error-page {
+        .error-content {
+            height: 89vh;
+            padding-top: 5%;
+    
+            h1 {
+                font-size: 20rem;
+                line-height: .8em;
+            }
+    
+            p {
+                font-size: 16px;
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $xl-small) and (max-width: $xl-large) {
+    .error-page {
+        .error-content {
+            height: 89vh;
+            padding-top: 5%;
+    
+            h1 {
+                font-size: 22rem;
+                line-height: .8em;
+            }
+    
+            p {
+                font-size: 16px;
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $xl-large) and (max-width: $giant) {
+}
+@media screen and (min-width: $giant) {
+    .error-page {
+        .error-content {
+            height: 89vh;
+            padding-top: 5%;
+    
+            h1 {
+                font-size: 29rem;
+                line-height: .8em;
+            }
+    
+            p {
+                font-size: 22px;
+                width: 35%;
+            }
+        }
+    }
+  
+}
