@@ -78,6 +78,33 @@ header {
             }
         }
     }
+
+    .nav-menu {
+        display: none;
+        position: relative;
+        overflow: hidden;
+
+        p {
+            position: relative;
+            cursor: pointer;
+            font-size: 13px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                height: 1.5px;
+                width: 0%;
+                background-color: var(--text);
+                transition: all .4s ease;
+            }
+
+            &:hover:after {
+                width: 100%;
+            }
+        }
+    }
 }
 
 $xs: 0;
@@ -89,27 +116,60 @@ $xl-large: 1320px;
 $giant: 1920px;
 
 @media screen and (min-width: $xs) and (max-width: $sm) {
-    .navbar {
-    
-        .nav-links {
-            gap: 30px;
-    
-            ul {
-                gap: 20px;
-    
-                a {
+    header {
+        padding: 10px 30px;
+        .navbar {
+        
+            .nav-links {
+                display: none;
+                gap: 30px;
+        
+                ul {
+                    gap: 20px;
+        
+                    a {
+                        font-size: 11px;
+                    }
+                }
+        
+                button {
+                    padding: 7px 15px;
                     font-size: 11px;
                 }
             }
-    
-            button {
-                padding: 7px 15px;
-                font-size: 11px;
+
+            .nav-menu {
+                display: block;
             }
         }
     }
 }
 @media screen and (min-width: $sm) and (max-width: $md) {
+header {
+    padding: 10px 30px;
+    .navbar {
+        .nav-links {
+            gap: 30px;
+    
+            ul {
+                gap: 20px;
+    
+                a {
+                    font-size: 12px;
+                }
+            }
+    
+            button {
+                padding: 7px 15px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+header {
+    padding: 10px 40px;
     .navbar {
     
         .nav-links {
@@ -130,26 +190,6 @@ $giant: 1920px;
         }
     }
 }
-@media screen and (min-width: $md) and (max-width: $lg) {
-    .navbar {
-    
-        .nav-links {
-            gap: 30px;
-    
-            ul {
-                gap: 20px;
-    
-                a {
-                    font-size: 12px;
-                }
-            }
-    
-            button {
-                padding: 7px 15px;
-                font-size: 12px;
-            }
-        }
-    }
 
 }
 @media screen and (min-width: $lg) and (max-width: $xl-small) {

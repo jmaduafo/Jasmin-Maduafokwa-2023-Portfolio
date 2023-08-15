@@ -17,3 +17,49 @@
         flex: 1;
     }
 }
+
+$xs: 0;
+$sm: 480px;
+$md: 767px;
+$lg: 991px;
+$xl-small: 1200px;
+$xl-large: 1320px;
+$giant: 1920px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .break {
+        padding: 0 20px;
+        gap: 1.5rem;
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .break {
+        padding: 0 30px;
+        gap: 1.5rem;
+    }
+  
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .break {
+        padding: 0 40px;
+        gap: 2rem;
+    }
+
+}
+@media screen and (min-width: $lg) and (max-width: $xl-small) {
+    .break {
+        gap: 2rem;
+    }
+}
+@media screen and (min-width: $xl-small) and (max-width: $xl-large) {
+}
+
+@media screen and (min-width: $xl-large) and (max-width: $giant) {
+}
+@media screen and (min-width: $giant) {    
+    .break {
+        padding: 0 60px;
+        gap: 3rem;
+    }
+  
+}
