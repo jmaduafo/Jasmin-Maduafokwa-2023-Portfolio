@@ -12,12 +12,14 @@
 
         .home-intro-name {
             text-align: center;
+            overflow: hidden;
+            
         }
 
         .home-intro-info {
             display: flex;
             justify-content: right;
-            margin-top: -2.5rem;
+            margin-top: .5rem;
             p {
                 width: 45%;
                 text-indent: 10%;

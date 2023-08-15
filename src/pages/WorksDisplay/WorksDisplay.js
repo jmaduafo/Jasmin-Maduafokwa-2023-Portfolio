@@ -41,19 +41,19 @@ function WorksDisplay() {
                     <div>
                     {works?.technologies.length > 6 ? works?.technologies.slice(0,6).map(tech => {
                         return (
-                          <p>{tech}</p>
+                          <p key={tech}>{tech}</p>
                         
                       )
                       }) : works?.technologies.map(tech => {
                         return (
-                          <p>{tech}</p>
+                          <p key={tech}>{tech}</p>
                       )
                       })}
                       </div>
                       <div>
                         {works?.technologies.length > 5 ? works?.technologies.slice(6).map(tech => {
                           return (
-                            <p>{tech}</p>
+                            <p key={tech}>{tech}</p>
                         )
                         }) : ''}
                       </div>
@@ -66,13 +66,12 @@ function WorksDisplay() {
               </div>
               <div className='works-links'>
                 <div className='works-next'>
-                  <i className='bx bx-left-arrow-alt'></i>
-                  <Link to={`/works/${selectedWorks[(((works?.id + 4) - 1) - 1) % 4]?.title}`}><button>Previous Project</button></Link>
+                  
+                  <Link to={`/works/${selectedWorks[(((works?.id + 4) - 1) - 1) % 4]?.title}`}><p>Previous</p></Link>
                 </div>
-                <a href={`https://github.com/${works?.github}`} target='_blank' rel='noreferrer'><i className='bx bxl-github' ></i></a>
+                {/* <a href={`https://github.com/${works?.github}`} target='_blank' rel='noreferrer'><i className='bx bxl-github' ></i></a> */}
                 <div className='works-next'>
-                  <Link to={`/works/${selectedWorks[(((works?.id + 4) - 1) + 1) % 4]?.title}`}><button>Next Project</button></Link>
-                  <i className='bx bx-right-arrow-alt'></i>
+                  <Link to={`/works/${selectedWorks[(((works?.id + 4) - 1) + 1) % 4]?.title}`}><p>Next</p></Link>
                 </div>
               </div>
               

@@ -1,10 +1,11 @@
 import React from 'react'
 import '../Carousel/carousel.scss'
 import './home-carousel.scss'
+import  { motion, easeInOut } from 'framer-motion'
 
 function HomeCarousel() {
   return (
-    <div className='carousel-container'>
+    <motion.div initial={{ y: 120 }} animate={{ y: 0, ease: easeInOut, transition: { duration: 1.2, delay: .6}}} className='carousel-container'>
       <div className='carousel'>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
@@ -93,7 +94,7 @@ function HomeCarousel() {
         <span>Creative Developer</span>
         <span>&#9679;</span>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

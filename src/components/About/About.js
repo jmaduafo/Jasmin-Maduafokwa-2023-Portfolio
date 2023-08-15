@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './about.scss'
 import BreakPoint from '../Breakpoint/Breakpoint'
-import { motion } from 'framer-motion'
+import { motion, easeInOut } from 'framer-motion'
 import skillsData from '../../utils/skills'
 
 function About({scrollYProgress}) {
@@ -19,11 +19,11 @@ function About({scrollYProgress}) {
   }, [skills])
   
   return (
-    <section>
+    <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1}} transition={{ delay: 3 }} viewport={{ once: true }}>
       <div className='about-section'>
         <BreakPoint name={'about'} link={'about'}/>
         <div className='about-desc'>
-          <h3>When I’m not busy coding, I also enjoy listening to <span onMouseEnter={() => setMusicHover(true)} onMouseLeave={() => setMusicHover(false)}>music</span>, watching <span onMouseEnter={() => setAnimeHover(true)} onMouseLeave={() => setAnimeHover(false)}>anime</span>, and searching for the next show or movie on <span onMouseEnter={() => setNetflixHover(true)} onMouseLeave={() => setNetflixHover(false)}>Netflix</span> to binge while lazing on my bed.</h3>
+          <motion.h3 initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0, ease: easeInOut }} transition={{ duration: 1.2, delay: 2.5}} viewport={{ once: true }}>When I’m not busy coding, I also enjoy listening to <span onMouseEnter={() => setMusicHover(true)} onMouseLeave={() => setMusicHover(false)}>music</span>, watching <span onMouseEnter={() => setAnimeHover(true)} onMouseLeave={() => setAnimeHover(false)}>anime</span>, and searching for the next show or movie on <span onMouseEnter={() => setNetflixHover(true)} onMouseLeave={() => setNetflixHover(false)}>Netflix</span> to binge while lazing on my bed.</motion.h3>
           <div className='about-images'>
             <div>
               <motion.img initial={{ rotate: 0, opacity: 0 }} animate={{ rotate: musicHover ? '20deg' : 0, opacity: musicHover ? 1 : 0 }} src='https://res.cloudinary.com/dyxxn831a/image/upload/v1691764231/portfolio%20images/music-image1_gohfti.jpg' alt='music playing on spotify'/>
@@ -36,7 +36,7 @@ function About({scrollYProgress}) {
             </div>
           </div>
         </div>
-        <div className='about-skills'>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, ease: easeInOut }} transition={{ duration: .8, delay: 3}} viewport={{ once: true }} className='about-skills'>
           <div className='skills-title'>
             <div className='title-round'>
               {/* <div className='skill-round'></div>  */}
@@ -58,9 +58,9 @@ function About({scrollYProgress}) {
               )
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

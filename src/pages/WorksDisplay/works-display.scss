@@ -1,4 +1,5 @@
 .works-display-content {
+    padding: 10% 0;
     .works-all {
         height: 89vh;
         padding: 0 60px;
@@ -11,7 +12,7 @@
             .works-general {
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
 
                 .year {
                     p {
@@ -49,30 +50,29 @@
             .works-links {
                 display: flex;
                 align-items: center;
-                gap: 1rem;
+                justify-content: space-between;
+                // gap: 1rem;
                 margin-top: 1.5rem;
 
-                i {
-                    font-size: 1.5rem;
-                }
+                // i {
+                //     font-size: 1.5rem;
+                // }
 
                 .works-next {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    gap: 5rem;
-                    padding: 3px 10px;
-                    border-radius: 30px;
-                    border: 1.5px solid var(--detail);
-
-                    button {
+                    // gap: 5rem;
+                    // padding: 3px 10px;
+                    // border-radius: 30px;
+                    // border: 1.5px solid var(--detail);
+                    p {
                         text-transform: uppercase;
-                        background-color: transparent;
-                        border: none;
-                        outline: none;
-                        color: var(--text);
-                        cursor: pointer;
+                        font-size: 11.5px;
+                        font-weight: 300;
+                        opacity: .7;
                     }
+
                 }
             }
         }

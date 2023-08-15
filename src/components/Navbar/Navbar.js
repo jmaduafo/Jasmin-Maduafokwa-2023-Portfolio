@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <>
-    <header>
+    <motion.header initial={{ y: -120 }} animate={{ y: 0 , ease: 'easeIn', transition: { duration: .8, delay: 5.1 }}}>
       <nav>
         <div className='navbar'>
           <div className='nav-logo'>
@@ -28,7 +28,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-    </header>
+    </motion.header>
     <Menu setMenuOpen={setMenuOpen} menuOpen={menuOpen}></Menu>
     </>
   )

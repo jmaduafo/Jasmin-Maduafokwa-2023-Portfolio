@@ -16,6 +16,7 @@ function Menu({menuOpen, setMenuOpen}) {
             <HashLink to='/#about' onClick={() => setMenuOpen(false)}><li>About</li></HashLink>
             <HashLink to='/#works' onClick={() => setMenuOpen(false)}><li>Works</li></HashLink>
             <HashLink to='/#contact' onClick={() => setMenuOpen(false)}><li>Contact</li></HashLink>
+            <HashLink to='/#contact' onClick={() => setMenuOpen(false)}><li>Resume</li></HashLink>
         </ul>
     </motion.div>
   )
