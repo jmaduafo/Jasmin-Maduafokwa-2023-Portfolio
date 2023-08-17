@@ -1,5 +1,6 @@
 .works-display-content {
-    padding: 10% 0;
+    padding: 5% 0;
+    margin-bottom: 5%;
     .works-all {
         height: 89vh;
         padding: 0 60px;
@@ -7,32 +8,109 @@
         justify-content: space-around;
         align-items: center;
 
+        .title {
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-size: 14px;
+            opacity: .8;
+        }
+
         .works-display-info {
             flex-basis: 40%;
-            .works-general {
+            padding-top: 7%;
+            
+
+            .works-opening {
+               
+                h3 {
+                    font-size: 3rem;
+                    letter-spacing: -4px;
+                }
+            }
+
+            .works-clicks {
                 display: flex;
-                justify-content: space-between;
+                gap: 30px;
+                margin: 20px 0 10px;
+                padding-bottom: 10px;
+                border-bottom: .5px solid #F5E7D330;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    opacity: .8;
+                    cursor: pointer;
+
+                    &:hover i {
+                        transform: rotate(45deg) translateX(3px) translateY(-3px);
+                    }
+
+                    p {
+                        font-size: 17px;
+                        letter-spacing: -.6px;
+                        font-weight: 300;
+                        
+                    }
+                    i {
+                        transform: rotate(45deg);
+                        font-size: 18px;
+                        transition: all .5s ease;
+                    }
+                }
+            }
+            .works-general {
+                // display: flex;
+                // justify-content: space-between;
                 margin-bottom: 2rem;
 
-                .year {
-                    p {
-                        font-weight: 400;
+                .year-roles {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .year p:last-child {
+                        opacity: .7;
+                    }
+
+                    .roles {
+                        div {
+                            p {
+                                text-transform: uppercase;
+                                opacity: .7;
+                                margin-bottom: 2px;
+                                // border: 1px solid var(--detail);
+                                // padding: 2px 5px;
+                                // width: fit-content;
+                                // border-radius: 40px;
+                            }
+                        }
+                        
                     }
                 }
 
                 .roles-tools {
-                    .roles, .tools {
-                        display: flex;
-                        gap: 4em;
+                    .title {
+                        margin-top: 1.5rem;
+                        margin-bottom: 10px;
+                    }
+                    .tools-content {
                         margin-bottom: 2rem;
-                        .title {
-                            font-weight: 400;
-                        }
+                        
                         div {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 10px;
+                            margin-bottom: 5px;
                             p {
-                                text-transform: capitalize;
+                                text-transform: uppercase;
                                 margin-bottom: 2px;
-                                font-style: italic;
+                                // font-style: italic;
+                                opacity: .7;
+                                padding: 2px 8px;
+                                border: 1px solid var(--detail);
+                                border-radius: 30px;
+                                font-size: 11px;
                             }
                         }
                     }
@@ -45,27 +123,27 @@
                 .works-background {
                     margin-top: 20px;
                 }
+
+                p {
+                    font-size: 15px;
+                }
             }
 
             .works-links {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                // gap: 1rem;
+                // justify-content: space-between;
+                gap: 1rem;
                 margin-top: 1.5rem;
-
-                // i {
-                //     font-size: 1.5rem;
-                // }
 
                 .works-next {
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-                    // gap: 5rem;
-                    // padding: 3px 10px;
-                    // border-radius: 30px;
-                    // border: 1.5px solid var(--detail);
+                    justify-content: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 1px solid var(--text);
                     p {
                         text-transform: uppercase;
                         font-size: 11.5px;
@@ -78,7 +156,8 @@
         }
 
         .works-display-images {
-            position: relative;
+            position: sticky;
+            top: 5%;
             .background-img {
                 width: 500px;
                 height: 700px;

@@ -1,6 +1,7 @@
 import React from 'react'
 import './contact.scss'
 import Breakpoint from '../Breakpoint/Breakpoint'
+import Magnetic from '../Magnetic/Magnetic'
 
 function Contact({scrollYProgress}) {
   return (
@@ -18,7 +19,7 @@ function Contact({scrollYProgress}) {
           </div>
           <div className='in-touch'>
             <h3>Want to work together? Let's get in touch!</h3>
-            <p>Currently available for hybrid / remote work</p>
+            <Magnetic><p style={{ cursor: 'default'}}>Currently available for hybrid / remote work</p></Magnetic>
           </div>
         </div>
         <div className='socials-bottom'>

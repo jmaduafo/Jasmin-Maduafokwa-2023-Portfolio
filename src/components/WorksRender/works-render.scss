@@ -7,6 +7,7 @@
         margin-bottom: 3em;
         display: flex;
         align-items: flex-end;
+        // clip-path: circle(65% at 50% 15%); 
 
         .works-padding {
             padding: 0 5%; 
@@ -47,10 +48,24 @@
                 h2 {
                     text-transform: uppercase;
                     cursor: pointer;
+                    transition: all .5s ease;
+                    
+                    &:hover {
+                        transform: translateX(-5%);
+                    }
+
+                    &:hover + .bx {
+                        transform: translateX(5%) translateY(-5%);
+                    }
                 }
                 i {
                     transform: rotate(45deg);
                     font-size: 8rem;
+                    transition: all .5s ease;
+                }
+
+                &:hover i {
+                    transform: rotate(45deg) translateX(5%) translateY(-5%);
                 }
             }
             
@@ -65,6 +80,7 @@
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
+            transition: all .5s ease;
         }
     }
 }
@@ -80,7 +96,8 @@ $giant: 1920px;
 @media screen and (min-width: $xs) and (max-width: $sm) {
     .works-render-section {
         .selected-works {
-            height: 70vh;    
+            height: 70vh; 
+            
             .works-padding {
                 padding: 0 5%;            
     

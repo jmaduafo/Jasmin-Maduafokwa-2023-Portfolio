@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './navbar.scss'
 import { HashLink } from 'react-router-hash-link'
 import Menu from '../Menu/Menu'
+import Magnetic from '../Magnetic/Magnetic'
 import { motion } from 'framer-motion'
 
 function Navbar() {
@@ -21,7 +22,9 @@ function Navbar() {
                 <HashLink to='/#works' smooth><li>works</li></HashLink>
                 <HashLink to='/#contact' smooth><li>contact</li></HashLink>
               </ul>
-              <a href='#hre' download><button>resume</button></a>
+              <Magnetic>
+                <a href='#hre' download><button>resume</button></a>
+              </Magnetic>
           </div>
           <div className='nav-menu' onClick={() => setMenuOpen(true)}>
             <motion.p initial={{ y: 0 }} animate={{ y: menuOpen ? 40 : 0, ease: 'easeInOut', transition: { duration: .5 }}}>Menu</motion.p>
