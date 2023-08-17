@@ -29,6 +29,10 @@
     ul {
         text-align: center;
 
+        div {
+            overflow: hidden;
+        }
+
         li {
             font-size: 3rem;
             font-family: 'Blanvad', serif;

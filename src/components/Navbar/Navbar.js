@@ -3,14 +3,14 @@ import './navbar.scss'
 import { HashLink } from 'react-router-hash-link'
 import Menu from '../Menu/Menu'
 import Magnetic from '../Magnetic/Magnetic'
-import { motion } from 'framer-motion'
+import { motion, easeInOut, easeIn } from 'framer-motion'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <>
-    <motion.header initial={{ y: -120 }} animate={{ y: 0 , ease: 'easeIn', transition: { duration: .8, delay: 5.1 }}}>
+    <motion.header initial={{ y: -120 }} animate={{ y: 0 , ease: easeIn, transition: { duration: .8, delay: 5.1 }}}>
       <nav>
         <div className='navbar'>
           <div className='nav-logo'>
@@ -27,7 +27,7 @@ function Navbar() {
               </Magnetic>
           </div>
           <div className='nav-menu' onClick={() => setMenuOpen(true)}>
-            <motion.p initial={{ y: 0 }} animate={{ y: menuOpen ? 40 : 0, ease: 'easeInOut', transition: { duration: .5 }}}>Menu</motion.p>
+            <motion.p initial={{ y: 0 }} animate={{ y: menuOpen ? 40 : 0, ease: easeInOut, transition: { duration: .5 }}}>Menu</motion.p>
           </div>
         </div>
       </nav>

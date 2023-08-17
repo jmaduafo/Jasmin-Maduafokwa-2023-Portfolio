@@ -1,12 +1,12 @@
 .works-display-content {
-    padding: 5% 0;
+    padding: 10% 0;
     margin-bottom: 5%;
     .works-all {
-        height: 89vh;
+        height: fit-content;
         padding: 0 60px;
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
 
         .title {
             font-weight: 400;
@@ -18,11 +18,12 @@
 
         .works-display-info {
             flex-basis: 40%;
-            padding-top: 7%;
+            // padding-top: 7%;
             
 
             .works-opening {
-               
+               overflow: hidden;
+               padding-bottom: 5px;
                 h3 {
                     font-size: 3rem;
                     letter-spacing: -4px;
@@ -120,6 +121,9 @@
             }
 
             .works-desc {
+                div {
+                    overflow: hidden;
+                }
                 .works-background {
                     margin-top: 20px;
                 }
@@ -192,4 +196,819 @@
             }
         }
     }
+}
+
+$xs: 0;
+$sm: 480px;
+$md: 767px;
+$lg: 991px;
+$xl-small: 1200px;
+$xl-large: 1320px;
+$giant: 1920px;
+
+@media screen and (min-width: $xs) and (max-width: $sm) {
+    .works-display-content {
+        padding: 30% 0 5%;
+        margin-bottom: 5%;
+        .works-all {
+            height: fit-content;
+            padding: 0 20px;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+    
+            .title {
+                margin-bottom: 10px;
+                font-size: 12px;
+            }
+    
+            .works-display-info {
+                flex-basis: 45%;
+                padding-top: 5%;
+                
+                .works-opening {
+                   padding-bottom: 15px;
+                   margin-top: 2em;
+                    h3 {
+                        font-size: 2rem;
+                        letter-spacing: -3px;
+                    }
+                }
+    
+                .works-clicks {
+                    gap: 30px;
+                    margin: 20px 0 20px;
+                    padding-bottom: 15px;
+    
+                    div {
+                        gap: 5px;
+    
+                        &:hover i {
+                            transform: rotate(45deg) translateX(3px) translateY(-3px);
+                        }
+    
+                        p {
+                            font-size: 14px;
+                            letter-spacing: -.6px;
+                            
+                        }
+                        i {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .works-general {
+                    margin-bottom: 2rem;
+    
+                    .year-roles {
+    
+                        .roles {
+                            div {
+                                p {
+                                    margin-bottom: 4px;
+                                    font-size: 11px;
+                                }
+                            }
+                            
+                        }
+                    }
+    
+                    .roles-tools {
+                        .title {
+                            margin-top: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                        .tools-content {
+                            margin-bottom: 2rem;
+                            
+                            div {
+                                gap: 10px;
+                                margin-bottom: 5px;
+                                p {
+                                    margin-bottom: 2px;
+                                    padding: 3px 10px;
+                                    font-size: 11px;
+                                    letter-spacing: -.3px;
+                                }
+                            }
+                        }
+                    }
+    
+                    
+                }
+    
+                .works-desc {
+                    .works-background {
+                        margin-top: 20px;
+                    }
+    
+                    p {
+                        font-size: 12.5px;
+                    }
+                }
+    
+                .works-links {
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    gap: 1rem;
+                    margin-top: 1.5rem;
+    
+                    .works-next {
+                        width: 45px;
+                        height: 45px;
+                        p {
+                            font-size: 10px;
+                        }
+    
+                    }
+                }
+            }
+    
+            .works-display-images {
+                position: static;
+                top: 5%;
+                .background-img {
+                    width: 240px;
+                    height: 340px;
+                    border-radius: 280px;
+    
+                    img {
+                        border-radius: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $sm) and (max-width: $md) {
+    .works-display-content {
+        padding: 15% 0 5%;
+        margin-bottom: 5%;
+        .works-all {
+            height: fit-content;
+            padding: 0 40px;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+    
+            .title {
+                margin-bottom: 10px;
+                font-size: 13px;
+            }
+    
+            .works-display-info {
+                flex-basis: 45%;
+                padding-top: 5%;
+                
+                .works-opening {
+                   padding-bottom: 15px;
+                   margin-top: 2em;
+                    h3 {
+                        font-size: 2.5rem;
+                        letter-spacing: -3px;
+                    }
+                }
+    
+                .works-clicks {
+                    gap: 30px;
+                    margin: 20px 0 20px;
+                    padding-bottom: 15px;
+    
+                    div {
+                        gap: 5px;
+    
+                        &:hover i {
+                            transform: rotate(45deg) translateX(3px) translateY(-3px);
+                        }
+    
+                        p {
+                            font-size: 16px;
+                            letter-spacing: -.6px;
+                            
+                        }
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .works-general {
+                    margin-bottom: 2rem;
+    
+                    .year-roles {
+    
+                        .roles {
+                            div {
+                                p {
+                                    margin-bottom: 4px;
+                                    font-size: 12px;
+                                }
+                            }
+                            
+                        }
+                    }
+    
+                    .roles-tools {
+                        .title {
+                            margin-top: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                        .tools-content {
+                            margin-bottom: 2rem;
+                            
+                            div {
+                                gap: 10px;
+                                margin-bottom: 5px;
+                                p {
+                                    margin-bottom: 2px;
+                                    padding: 3px 10px;
+                                    font-size: 12px;
+                                    letter-spacing: -.3px;
+                                }
+                            }
+                        }
+                    }
+    
+                    
+                }
+    
+                .works-desc {
+                    .works-background {
+                        margin-top: 20px;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                    }
+                }
+    
+                .works-links {
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    gap: 1rem;
+                    margin-top: 1.5rem;
+    
+                    .works-next {
+                        width: 50px;
+                        height: 50px;
+                        p {
+                            font-size: 11px;
+                        }
+    
+                    }
+                }
+            }
+    
+            .works-display-images {
+                position: static;
+                top: 5%;
+                .background-img {
+                    width: 380px;
+                    height: 540px;
+                    border-radius: 280px;
+    
+                    img {
+                        border-radius: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $md) and (max-width: $lg) {
+    .works-display-content {
+        padding: 7% 0;
+        margin-bottom: 5%;
+        .works-all {
+            height: fit-content;
+            padding: 0 60px;
+            justify-content: center;
+            flex-direction: column-reverse;
+            align-items: center;
+    
+            .title {
+                margin-bottom: 10px;
+                font-size: 13px;
+            }
+    
+            .works-display-info {
+                flex-basis: 45%;
+                padding-top: 5%;
+                
+                .works-opening {
+                   padding-bottom: 15px;
+                    h3 {
+                        font-size: 3.5rem;
+                        letter-spacing: -3px;
+                    }
+                }
+    
+                .works-clicks {
+                    gap: 30px;
+                    margin: 20px 0 20px;
+                    padding-bottom: 15px;
+    
+                    div {
+                        gap: 5px;
+    
+                        &:hover i {
+                            transform: rotate(45deg) translateX(3px) translateY(-3px);
+                        }
+    
+                        p {
+                            font-size: 16px;
+                            letter-spacing: -.6px;
+                            
+                        }
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .works-general {
+                    margin-bottom: 2rem;
+    
+                    .year-roles {
+    
+                        .roles {
+                            div {
+                                p {
+                                    margin-bottom: 4px;
+                                    font-size: 12px;
+                                }
+                            }
+                            
+                        }
+                    }
+    
+                    .roles-tools {
+                        .title {
+                            margin-top: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                        .tools-content {
+                            margin-bottom: 2rem;
+                            
+                            div {
+                                gap: 10px;
+                                margin-bottom: 5px;
+                                p {
+                                    margin-bottom: 2px;
+                                    padding: 3px 10px;
+                                    font-size: 12px;
+                                    letter-spacing: -.3px;
+                                }
+                            }
+                        }
+                    }
+    
+                    
+                }
+    
+                .works-desc {
+                    .works-background {
+                        margin-top: 20px;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                    }
+                }
+    
+                .works-links {
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    gap: 1rem;
+                    margin-top: 1.5rem;
+    
+                    .works-next {
+                        width: 50px;
+                        height: 50px;
+                        p {
+                            font-size: 11px;
+                        }
+    
+                    }
+                }
+            }
+    
+            .works-display-images {
+                position: static;
+                top: 5%;
+                .background-img {
+                    width: 380px;
+                    height: 540px;
+                    border-radius: 280px;
+    
+                    img {
+                        border-radius: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $lg) and (max-width: $xl-small) {
+    .works-display-content {
+        padding: 7% 0;
+        margin-bottom: 5%;
+        .works-all {
+            height: fit-content;
+            padding: 0 60px;
+            justify-content: space-around;
+            align-items: flex-start;
+    
+            .title {
+                margin-bottom: 10px;
+                font-size: 13px;
+            }
+    
+            .works-display-info {
+                flex-basis: 45%;
+                padding-top: 5%;
+                
+                .works-opening {
+                   padding-bottom: 15px;
+                    h3 {
+                        font-size: 2.5rem;
+                        letter-spacing: -3px;
+                    }
+                }
+    
+                .works-clicks {
+                    gap: 30px;
+                    margin: 20px 0 20px;
+                    padding-bottom: 15px;
+    
+                    div {
+                        gap: 5px;
+    
+                        &:hover i {
+                            transform: rotate(45deg) translateX(3px) translateY(-3px);
+                        }
+    
+                        p {
+                            font-size: 16px;
+                            letter-spacing: -.6px;
+                            
+                        }
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .works-general {
+                    margin-bottom: 2rem;
+    
+                    .year-roles {
+    
+                        .roles {
+                            div {
+                                p {
+                                    margin-bottom: 4px;
+                                    font-size: 12px;
+                                }
+                            }
+                            
+                        }
+                    }
+    
+                    .roles-tools {
+                        .title {
+                            margin-top: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                        .tools-content {
+                            margin-bottom: 2rem;
+                            
+                            div {
+                                gap: 10px;
+                                margin-bottom: 5px;
+                                p {
+                                    margin-bottom: 2px;
+                                    padding: 3px 10px;
+                                    font-size: 12px;
+                                    letter-spacing: -.3px;
+                                }
+                            }
+                        }
+                    }
+    
+                    
+                }
+    
+                .works-desc {
+                    .works-background {
+                        margin-top: 20px;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                    }
+                }
+    
+                .works-links {
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    gap: 1rem;
+                    margin-top: 1.5rem;
+    
+                    .works-next {
+                        width: 50px;
+                        height: 50px;
+                        p {
+                            font-size: 11px;
+                        }
+    
+                    }
+                }
+            }
+    
+            .works-display-images {
+                position: sticky;
+                top: 5%;
+                .background-img {
+                    width: 380px;
+                    height: 540px;
+                    border-radius: 280px;
+    
+                    img {
+                        border-radius: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $xl-small) and (max-width: $xl-large) {
+    .works-display-content {
+        padding: 5% 0;
+        margin-bottom: 5%;
+        .works-all {
+            height: fit-content;
+            padding: 0 60px;
+            justify-content: space-around;
+            align-items: flex-start;
+    
+            .title {
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+    
+            .works-display-info {
+                flex-basis: 40%;
+                padding-top: 5%;
+                
+                .works-opening {
+                   padding-bottom: 15px;
+                    h3 {
+                        font-size: 3rem;
+                        letter-spacing: -3px;
+                    }
+                }
+    
+                .works-clicks {
+                    gap: 30px;
+                    margin: 20px 0 20px;
+                    padding-bottom: 15px;
+    
+                    div {
+                        gap: 5px;
+    
+                        &:hover i {
+                            transform: rotate(45deg) translateX(3px) translateY(-3px);
+                        }
+    
+                        p {
+                            font-size: 18px;
+                            letter-spacing: -.6px;
+                            
+                        }
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .works-general {
+                    margin-bottom: 2rem;
+    
+                    .year-roles {
+    
+                        .roles {
+                            div {
+                                p {
+                                    margin-bottom: 4px;
+                                }
+                            }
+                            
+                        }
+                    }
+    
+                    .roles-tools {
+                        .title {
+                            margin-top: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                        .tools-content {
+                            margin-bottom: 2rem;
+                            
+                            div {
+                                gap: 10px;
+                                margin-bottom: 5px;
+                                p {
+                                    margin-bottom: 2px;
+                                    padding: 3px 10px;
+                                    font-size: 12px;
+                                    letter-spacing: -.3px;
+                                }
+                            }
+                        }
+                    }
+    
+                    
+                }
+    
+                .works-desc {
+                    .works-background {
+                        margin-top: 20px;
+                    }
+    
+                    p {
+                        font-size: 16px;
+                    }
+                }
+    
+                .works-links {
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    gap: 1rem;
+                    margin-top: 1.5rem;
+    
+                    .works-next {
+                        width: 60px;
+                        height: 60px;
+                        p {
+                            font-size: 13px;
+                        }
+    
+                    }
+                }
+            }
+    
+            .works-display-images {
+                position: sticky;
+                top: 5%;
+                .background-img {
+                    width: 450px;
+                    height: 630px;
+                    border-radius: 280px;
+    
+                    img {
+                        border-radius: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $xl-large) and (max-width: $giant) {
+}
+@media screen and (min-width: $giant) {
+    .works-display-content {
+        padding: 5% 0;
+        margin-bottom: 5%;
+        .works-all {
+            height: 72vh;
+            padding: 0 60px;
+            justify-content: space-around;
+            align-items: center;
+    
+            .title {
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+    
+            .works-display-info {
+                flex-basis: 40%;
+                padding-top: 7%;
+                
+                .works-opening {
+                   padding-bottom: 15px;
+                    h3 {
+                        font-size: 4.5rem;
+                        letter-spacing: -4px;
+                    }
+                }
+    
+                .works-clicks {
+                    gap: 30px;
+                    margin: 20px 0 20px;
+                    padding-bottom: 15px;
+    
+                    div {
+                        gap: 5px;
+    
+                        &:hover i {
+                            transform: rotate(45deg) translateX(3px) translateY(-3px);
+                        }
+    
+                        p {
+                            font-size: 24px;
+                            letter-spacing: -.6px;
+                            
+                        }
+                        i {
+                            font-size: 24px;
+                        }
+                    }
+                }
+                .works-general {
+                    margin-bottom: 2rem;
+    
+                    .year-roles {
+    
+                        .roles {
+                            div {
+                                p {
+                                    margin-bottom: 4px;
+                                }
+                            }
+                            
+                        }
+                    }
+    
+                    .roles-tools {
+                        .title {
+                            margin-top: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                        .tools-content {
+                            margin-bottom: 2rem;
+                            
+                            div {
+                                gap: 10px;
+                                margin-bottom: 5px;
+                                p {
+                                    margin-bottom: 2px;
+                                    padding: 4px 13px;
+                                    font-size: 16px;
+                                    letter-spacing: .6px;
+                                }
+                            }
+                        }
+                    }
+    
+                    
+                }
+    
+                .works-desc {
+                    .works-background {
+                        margin-top: 20px;
+                    }
+    
+                    p {
+                        font-size: 20px;
+                    }
+                }
+    
+                .works-links {
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    gap: 1rem;
+                    margin-top: 1.5rem;
+    
+                    .works-next {
+                        width: 65px;
+                        height: 65px;
+                        p {
+                            font-size: 14px;
+                        }
+    
+                    }
+                }
+            }
+    
+            .works-display-images {
+                position: sticky;
+                top: 5%;
+                .background-img {
+                    width: 570px;
+                    height: 840px;
+                    border-radius: 280px;
+    
+                    img {
+                        border-radius: 280px;
+                    }
+                }
+            }
+        }
+    }
+  
 }

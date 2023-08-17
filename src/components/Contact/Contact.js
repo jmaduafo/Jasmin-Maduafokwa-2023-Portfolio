@@ -1,25 +1,28 @@
 import React from 'react'
 import './contact.scss'
 import Breakpoint from '../Breakpoint/Breakpoint'
-import Magnetic from '../Magnetic/Magnetic'
+import { motion } from 'framer-motion'
 
 function Contact({scrollYProgress}) {
   return (
-    <div className='contact-section'>
+    <motion.div className='contact-section' initial={{ opacity: 0}} whileInView={{ opacity: 1}} viewport={{ once: true}} transition={{ duration: 1.2, delay: .2}}>
       <Breakpoint name={'contact me'} link={'contact'}/>
       <div className='socials-in-touch'>
         <div className='socials-top'>
-          <div className='socials'>
+          <motion.div className='socials' initial={{ opacity: 0}} whileInView={{ opacity: 1}} viewport={{ once: true}} transition={{ duration: 1.2, delay: .6}}>
             <ul>
               <a href='mailto:jmaduafokwa@hotmail.com'><li>Email</li></a>
               <a href='https://github.com/jmaduafo' target='_blank' rel='noreferrer'><li>Github</li></a>
               <a href='https://www.instagram.com/jazzimanian_devil/' target='_blank' rel='noreferrer'><li>Instagram</li></a>
               <a href='https://www.linkedin.com/in/jasmine-maduafokwa-48070a180/' target='_blank' rel='noreferrer'><li>LinkedIn</li></a>
             </ul>
-          </div>
+          </motion.div>
           <div className='in-touch'>
-            <h3>Want to work together? Let's get in touch!</h3>
-            <Magnetic><p style={{ cursor: 'default'}}>Currently available for hybrid / remote work</p></Magnetic>
+            <div style={{ overflow: 'hidden'}}>   
+              <motion.h3 initial={{ y: 120}} whileInView={{ y: 0}} viewport={{ once: true}} transition={{ duration: 1.2, delay: .2}}>Want to work together? Let's get in touch!</motion.h3>
+            </div>
+
+            <motion.p initial={{ opacity: 0}} whileInView={{ opacity: 1}} viewport={{ once: true}} transition={{ duration: 1.2, delay: .6}}>Currently available for hybrid / remote work</motion.p>
           </div>
         </div>
         <div className='socials-bottom'>
@@ -27,7 +30,7 @@ function Contact({scrollYProgress}) {
         </div>
       </div>
 
-    </div>
+    </motion.div>
   )
 }
 

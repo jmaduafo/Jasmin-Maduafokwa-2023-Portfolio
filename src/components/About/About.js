@@ -40,15 +40,15 @@ function About({scrollYProgress}) {
           <div className='skills-title'>
             <div className='title-round'>
               {/* <div className='skill-round'></div>  */}
-              <motion.h4 onClick={() => setSkills('frontend')} initial={{ x: 0 }} animate={{ x: skills === 'frontend' ? -40 : 0, ease: 'ease' }}>Frontend</motion.h4>
+              <motion.h4 onClick={() => setSkills('frontend')} initial={{ x: 0 }} animate={{ x: skills === 'frontend' ? -40 : 0, ease: easeInOut }}>Frontend</motion.h4>
             </div>
             <div className='title-round'>
               {/* <div className='skill-round'></div>  */}
-              <motion.h4 onClick={() => setSkills('backend')} initial={{ x: 0 }} animate={{ x: skills === 'backend' ? -40 : 0, ease: 'ease' }} >Backend</motion.h4>
+              <motion.h4 onClick={() => setSkills('backend')} initial={{ x: 0 }} animate={{ x: skills === 'backend' ? -40 : 0, ease: easeInOut }} >Backend</motion.h4>
             </div>
             <div className='title-round'> 
               {/* <div className='skill-round'></div>  */}
-              <motion.h4 onClick={() => setSkills('other')} initial={{ x: 0 }} animate={{ x: skills === 'other' ? -40 : 0, ease: 'ease' }}>Other</motion.h4>
+              <motion.h4 onClick={() => setSkills('other')} initial={{ x: 0 }} animate={{ x: skills === 'other' ? -40 : 0, ease: easeInOut }}>Other</motion.h4>
             </div>
           </div>
           <div className='skills-render'>
