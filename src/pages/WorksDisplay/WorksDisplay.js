@@ -61,23 +61,11 @@ function WorksDisplay() {
                     <p className='title'>Tools</p>
                     <div className='tools-content'>
                       <div>
-                        {works?.technologies.length > 6 ? works?.technologies.slice(0,6).map(tech => {
+                        {works?.technologies.map(tech => {
                           return (
-                            <p key={tech}>{tech}</p>
-                          
-                        )
-                        }) : works?.technologies.map(tech => {
-                          return (
-                            <p key={tech}>{tech}</p>
+                            <p key={tech}>{tech}</p>  
                         )
                         })}
-                      </div>
-                      <div>
-                        {works?.technologies.length > 5 ? works?.technologies.slice(6).map(tech => {
-                          return (
-                            <p key={tech}>{tech}</p>
-                        )
-                        }) : ''}
                       </div>
                     </div>
                   </div>
@@ -93,14 +81,14 @@ function WorksDisplay() {
               </div>
               <div className='works-links'>
                 <Magnetic>
-                <Link to={`/works/${selectedWorks[(((works?.id + 4) - 1) - 1) % 4]?.title}`}>
+                <Link to={`/works/${selectedWorks[(((works?.id + selectedWorks.length) - 1) - 1) % selectedWorks.length]?.title}`}>
                   <motion.div initial={{ opacity: 0}} whileInView={{ opacity: 1, ease: easeIn}} transition={{ duration: 1.2, delay: 1}} viewport={{once:true}} className='works-next'>
                     <p>Prev</p>
                   </motion.div>
                 </Link>
                 </Magnetic>
                 <Magnetic>
-                <Link to={`/works/${selectedWorks[(((works?.id + 4) - 1) + 1) % 4]?.title}`}>
+                <Link to={`/works/${selectedWorks[(((works?.id + selectedWorks.length) - 1) + 1) % selectedWorks.length]?.title}`}>
                   <motion.div initial={{ opacity: 0}} whileInView={{ opacity: 1, ease: easeIn}} transition={{ duration: 1.2, delay: 1.1}} viewport={{once:true}} className='works-next'>
                     <p>Next</p>
                   </motion.div>

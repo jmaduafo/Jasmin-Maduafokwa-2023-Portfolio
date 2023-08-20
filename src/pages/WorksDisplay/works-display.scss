@@ -881,7 +881,7 @@ $giant: 1920px;
 }
 @media screen and (min-width: $giant) {
     .works-display-content {
-        padding: 5% 0;
+        padding: 10% 0;
         margin-bottom: 5%;
         .works-all {
             height: 72vh;
@@ -891,7 +891,7 @@ $giant: 1920px;
     
             .title {
                 margin-bottom: 10px;
-                font-size: 22px;
+                font-size: 18px;
             }
     
             .works-display-info {

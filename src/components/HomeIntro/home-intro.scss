@@ -101,12 +101,18 @@ $giant: 1920px;
     
         .home-intro-name-info {
             width: 90%;
+
+            .home-intro-name {    
+                h1 {
+                    margin-bottom: -.4em;
+                }
+            }
     
     
             .home-intro-info {
-                margin-top: -.5rem;
+                margin-top: .5rem;
                 p {
-                    width: 60%;
+                    width: 75%;
                 }
             }
     
@@ -139,10 +145,16 @@ $giant: 1920px;
     
         .home-intro-name-info {
             width: 90%;
+
+            .home-intro-name {    
+                h1 {
+                    margin-bottom: -.4em;
+                }
+            }
     
     
             .home-intro-info {
-                margin-top: -.5rem;
+                margin-top: .5rem;
                 p {
                     width: 60%;
                 }
@@ -176,10 +188,16 @@ $giant: 1920px;
     
         .home-intro-name-info {
             width: 85%;
+
+            .home-intro-name {    
+                h1 {
+                    margin-bottom: -.4em;
+                }
+            }
     
     
             .home-intro-info {
-                margin-top: -1.5rem;
+                margin-top: .5rem;
                 p {
                     width: 50%;
                 }
@@ -214,10 +232,16 @@ $giant: 1920px;
     
         .home-intro-name-info {
             width: 85%;
+
+            .home-intro-name {    
+                h1 {
+                    margin-bottom: -.4em;
+                }
+            }
     
     
             .home-intro-info {
-                margin-top: -1.5rem;
+                margin-top: .5rem;
                 p {
                     width: 50%;
                 }
@@ -251,10 +275,16 @@ $giant: 1920px;
     
         .home-intro-name-info {
             width: 85%;
+
+            .home-intro-name {    
+                h1 {
+                    margin-bottom: -.4em;
+                }
+            }
     
     
             .home-intro-info {
-                margin-top: -1.5rem;
+                margin-top: 1rem;
                 p {
                     width: 48%;
                 }
@@ -291,11 +321,16 @@ $giant: 1920px;
         .home-intro-name-info {
             width: 80%;
     
+            .home-intro-name {    
+                h1 {
+                    margin-bottom: -.4em;
+                }
+            }
     
             .home-intro-info {
-                margin-top: -2.5rem;
+                margin-top: 1.5rem;
                 p {
-                    width: 40%;
+                    width: 50%;
                 }
             }
     
