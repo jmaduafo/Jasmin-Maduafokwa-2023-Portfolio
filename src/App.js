@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.scss';
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
@@ -20,7 +20,7 @@ function App() {
       <Routes>
           <Route exact path='/' element={preloader ? <MainPreloader preloader={preloader} setPreloader={setPreloader}/> : <Home/>}/>
           <Route path='/works/:workTitle' element={workPreloader ? <WorkPreloader workPreloader={workPreloader} setWorkPreloader={setWorkPreloader}/> : <WorksDisplay/>}/>
-          <Route path='/*' element={<WrongPage/>}/>
+          <Route path='*' element={<WrongPage/>}/>
       </Routes>
       </LayoutGroup>
       <Footer/>
