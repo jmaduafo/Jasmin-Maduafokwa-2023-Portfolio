@@ -8,7 +8,6 @@ import WrongPage from './pages/WrongPage/WrongPage';
 import MainPreloader from './components/MainPreloader/MainPreloader';
 import WorkPreloader from './components/WorkPreloader/WorkPreloader';
 import { Routes, Route} from 'react-router-dom';
-import { LayoutGroup } from 'framer-motion';
 
 function App() {
   const [preloader, setPreloader] = useState(true)
@@ -16,13 +15,11 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <LayoutGroup>
       <Routes>
           <Route exact path='/' element={preloader ? <MainPreloader preloader={preloader} setPreloader={setPreloader}/> : <Home/>}/>
           <Route path='/works/:workTitle' element={workPreloader ? <WorkPreloader workPreloader={workPreloader} setWorkPreloader={setWorkPreloader}/> : <WorksDisplay/>}/>
           <Route path='*' element={<WrongPage/>}/>
       </Routes>
-      </LayoutGroup>
       <Footer/>
     </div>
   );
