@@ -12,7 +12,7 @@ root.render(
     <BrowserRouter>
     <HttpsRedirect>
       <App />
-      </HttpsRedirect>
+    </HttpsRedirect>
     </BrowserRouter>
   </React.StrictMode>
 );
