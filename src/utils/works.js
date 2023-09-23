@@ -52,7 +52,7 @@ const selectedWorks = [
       "roles": ["frontend", "creative direction", "web design"],
       "technologies": ['React', 'SASS', 'Javascript', 'Figma'],
       "github": 'jmaduafo/Lofi-Train',
-      "link": '',
+      "link": 'https://jmaduafo.github.io/Lofi-Train/',
       "images": ["https://res.cloudinary.com/dyxxn831a/image/upload/v1691879530/lofi-train-portfolio_grnclr.png", "https://res.cloudinary.com/dyxxn831a/image/upload/v1691879975/anime-lo-fi-wallpapers-61349-2121027-9311619_qpd2ke.jpg"],
       "landscapeImage": "https://res.cloudinary.com/dyxxn831a/image/upload/v1691764928/portfolio%20images/lofi-art-style-8k-image-landscape-generative-ai-free-photo_mrdkvk.jpg",
       "opening": 'Peace and serenity is the key to mental stability and brighter skin.',
