@@ -22,7 +22,7 @@ function Contact({scrollYProgress}) {
               <motion.h3 initial={{ y: 120}} whileInView={{ y: 0}} viewport={{ once: true}} transition={{ duration: 1.2, delay: .2}}>Want to work together? Let's get in touch!</motion.h3>
             </div>
 
-            <motion.p initial={{ opacity: 0}} whileInView={{ opacity: 1}} viewport={{ once: true}} transition={{ duration: 1.2, delay: .6}}>Currently available for hybrid / remote work</motion.p>
+            <motion.p initial={{ opacity: 0}} whileInView={{ opacity: 1}} viewport={{ once: true}} transition={{ duration: 1.2, delay: .6}}> <span style={{ color: 'green', paddingRight: '5px'}}>&#9679;</span> Currently available for hybrid / remote work</motion.p>
           </div>
         </div>
         <div className='socials-bottom'>
