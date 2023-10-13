@@ -2,7 +2,7 @@ import React from 'react'
 import { HashLink } from 'react-router-hash-link'
 import './menu.scss'
 import { motion, easeInOut } from 'framer-motion'
-import resume from '../../utils/jasmine-resume.pdf'
+// import resume from '../../utils/jasmine-resume.pdf'
 
 function Menu({menuOpen, setMenuOpen}) {
    
@@ -26,7 +26,7 @@ function Menu({menuOpen, setMenuOpen}) {
             <HashLink to='/#contact' onClick={() => setMenuOpen(false)}><motion.li initial={{ y: 120 }} animate={{ y: menuOpen ? 0 : 120, ease: easeInOut}} transition={{ duration: 1, delay: menuOpen ? .5 : 0 }}>Contact</motion.li></HashLink>
             </div>
             <div>
-            <a href={resume} download><motion.li initial={{ y: 120 }} animate={{ y: menuOpen ? 0 : 120, ease: easeInOut}} transition={{ duration: 1, delay: menuOpen ? .5 : 0 }}>Resume</motion.li></a>
+            <a><motion.li initial={{ y: 120 }} animate={{ y: menuOpen ? 0 : 120, ease: easeInOut}} transition={{ duration: 1, delay: menuOpen ? .5 : 0 }}>Resume</motion.li></a>
             </div>  
         </ul>
     </motion.div>

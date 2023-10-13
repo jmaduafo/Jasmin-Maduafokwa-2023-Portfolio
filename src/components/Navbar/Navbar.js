@@ -3,7 +3,7 @@ import './navbar.scss'
 import { HashLink } from 'react-router-hash-link'
 import Menu from '../Menu/Menu'
 import Magnetic from '../Magnetic/Magnetic'
-import resume from '../../utils/jasmine-resume.pdf'
+// import resume from '../../utils/jasmine-resume.pdf'
 import { motion, easeInOut, easeIn } from 'framer-motion'
 
 function Navbar() {
@@ -24,7 +24,7 @@ function Navbar() {
                 <HashLink to='/#contact' smooth><li>contact</li></HashLink>
               </ul>
               <Magnetic>
-                <a href={resume} download><button>resume</button></a>
+                <a><button>resume</button></a>
               </Magnetic>
           </div>
           <div className='nav-menu' onClick={() => setMenuOpen(true)}>
