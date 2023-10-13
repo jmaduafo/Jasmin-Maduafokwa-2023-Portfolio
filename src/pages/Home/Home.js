@@ -4,6 +4,7 @@ import HomeIntro from '../../components/HomeIntro/HomeIntro'
 import About from '../../components/About/About'
 import Works from '../../components/Works/Works'
 import Contact from '../../components/Contact/Contact'
+import { useScroll } from 'framer-motion'
 
 
 function Home() {
