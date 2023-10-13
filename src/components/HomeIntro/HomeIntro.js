@@ -1,21 +1,10 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import './home-intro.scss'
-import mainImage from '../../assets/images/home-intro-main-image.jpg'
 import Magnetic from '../Magnetic/Magnetic'
-import { motion, easeIn, useTransform, useScroll } from 'framer-motion'
+import { motion, easeIn } from 'framer-motion'
 
 
 function HomeIntro() {
-  // const homeTarget = useRef(null);
-
-  // const { scrollYProgress } = useScroll({
-  //   target: homeTarget,
-  //   offset: ["start end", "end start"]
-  // })
-
-  // const up = useTransform(scrollYProgress, [0, 1], [20, -30])
-  // const opaque = useTransform(scrollYProgress, [.5, 1], [1, .5])
-
   return (
     <motion.section>
       <motion.div className='home-intro-section'>

@@ -1,6 +1,5 @@
 import React from 'react'
 import './footer.scss'
-import { motion } from 'framer-motion'
 
 function Footer() {
   return (

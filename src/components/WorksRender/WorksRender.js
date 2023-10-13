@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import './works-render.scss'
 import selectedWorks from '../../utils/works'
-import Magnetic from '../Magnetic/Magnetic'
 import { motion, easeInOut} from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 function WorksRender() {
-  const [workHover, setWorkHover] = useState(false)
   const [imageHover, setImageHover] = useState(false)
 
   return (

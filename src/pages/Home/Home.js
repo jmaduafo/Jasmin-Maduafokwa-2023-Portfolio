@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import HomeCarousel from '../../components/HomeCarousel/HomeCarousel'
 import HomeIntro from '../../components/HomeIntro/HomeIntro'
 import About from '../../components/About/About'
 import Works from '../../components/Works/Works'
 import Contact from '../../components/Contact/Contact'
-import MainPreloader from '../../components/MainPreloader/MainPreloader'
-import { motion, useScroll, useTransform } from 'framer-motion';
+
 
 function Home() {
   const homeTarget = useRef(null);
