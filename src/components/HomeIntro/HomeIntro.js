@@ -36,7 +36,7 @@ function HomeIntro() {
             </Magnetic>
           </div>
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, ease: easeIn, transition: {duration: 1.2, delay: .8}}} className='home-intro-main-image'>
-            <motion.img initial={{ scale: .9 }} animate={{ scale: 1, ease: easeIn, transition: {duration: 1.2, delay: .8}}} src={mainImage} alt='wild plant'/>
+            <motion.img initial={{ scale: .9 }} animate={{ scale: 1, ease: easeIn, transition: {duration: 1.2, delay: .8}}} src='https://res.cloudinary.com/dyxxn831a/image/upload/v1697210038/portfolio%20images/simpler-port2_r8pzj7.jpg' alt='wild plant'/>
           </motion.div>
         </div>
       </motion.div>
