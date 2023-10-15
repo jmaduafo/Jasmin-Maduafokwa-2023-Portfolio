@@ -13,7 +13,7 @@ function Contact({scrollYProgress}) {
             <ul>
               <a href='mailto:jmaduafokwa@hotmail.com'><li>Email</li></a>
               <a href='https://github.com/jmaduafo' target='_blank' rel='noreferrer'><li>Github</li></a>
-              <a href='https://www.instagram.com/jazzimanian_devil/' target='_blank' rel='noreferrer'><li>Instagram</li></a>
+              <a href='https://www.behance.net/jmaduafo' target='_blank' rel='noreferrer'><li>Behance</li></a>
               <a href='https://www.linkedin.com/in/jasmine-maduafokwa-48070a180/' target='_blank' rel='noreferrer'><li>LinkedIn</li></a>
             </ul>
           </motion.div>

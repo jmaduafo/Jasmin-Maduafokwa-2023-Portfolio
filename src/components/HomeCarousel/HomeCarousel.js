@@ -9,7 +9,7 @@ function HomeCarousel() {
       <div className='carousel'>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -17,7 +17,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -25,7 +25,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -33,7 +33,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -41,7 +41,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -49,7 +49,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -57,7 +57,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -65,7 +65,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -73,7 +73,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -81,7 +81,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
@@ -89,7 +89,7 @@ function HomeCarousel() {
         <span>&#9679;</span>
         <span>Frontend Developer</span>
         <span>&#9679;</span>
-        <span>Backend Dabbler</span>
+        <span>Backend Developer</span>
         <span>&#9679;</span>
         <span>Creative Developer</span>
         <span>&#9679;</span>
