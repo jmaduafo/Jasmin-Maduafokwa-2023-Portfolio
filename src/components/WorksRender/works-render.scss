@@ -7,7 +7,11 @@
         margin-bottom: 3em;
         display: flex;
         align-items: flex-end;
-        // clip-path: circle(65% at 50% 15%); 
+
+        &:hover .selected-image {
+            transform: scale(0.95);
+            border-radius: 50%;
+        }
 
         .works-padding {
             padding: 0 5%; 
